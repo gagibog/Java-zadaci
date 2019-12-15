@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Domaci3 {
+	public static void main(String[] args) {
+		Scanner unos= new Scanner(System.in);
+	
+		System.out.println("Unesite zeljene brojeve a i b(a mora biti manji od b). ");
+		System.out.println("Unesite a: ");
+		int a = unos.nextInt();
+		System.out.println("Unesite b: ");
+		int b = unos.nextInt();
+		int br=0;
+		int j=0;
+		int i=a;
+
+        while (i <= b ){
+            if (i % 2 == 0) {
+                br = br + 1;
+                i++;
+        }else if(i %2 !=0) {   
+        	j=j+1;
+        	i++;
+        }
+  
+        } System.out.println("Pozitivnih ima: " +br);
+        System.out.println("Negativnih ima: " +j);
+			} 
+				}
