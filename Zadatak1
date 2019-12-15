@@ -1,0 +1,33 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Domaci1 {
+
+	public static void main(String[] args) {
+		int zamisljeniBroj;
+		int pokusaj;
+		boolean pogodak;
+		
+		Scanner ulaz = new Scanner(System.in);
+		zamisljeniBroj = 1 + (int) (Math.random()*100);
+		pogodak = false;
+		
+		System.out.println("Unesite zamisljeni broj izmedju 1 i 50");
+		
+                int brojac = 0;
+		while(!pogodak) {	
+			pokusaj = ulaz.nextInt();
+                        brojac++;
+			if (pokusaj < zamisljeniBroj) {
+				System.out.println("Zamisljeni broj je veci.");
+			} else if (pokusaj > zamisljeniBroj) {
+				System.out.println("Zamisljeni broj je manji.");
+			} else {
+				System.out.println("Pogodili ste broj iz " + brojac + " puta");
+				pogodak = true;
+			}
+		}
+                
+
+	}
+	}
