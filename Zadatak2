@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Domaci2 {
+
+	public static void main(String[] args) {
+	Scanner unos= new Scanner(System.in);
+	System.out.println("Potrebno je uneti dva broja.");
+	System.out.println("Prvi broj: ");
+	int a = unos.nextInt();
+	System.out.println("Drugi broj: ");
+	int b = unos.nextInt();
+	int zbir= a+b;
+	int oduz= a-b;
+	int mnoz= a*b;
+	
+	Scanner we= new Scanner(System.in);
+	System.out.println("ukoliko zelite da saberete ova dva broja unesite slovo s, ukoliko zelite da ih oduzmete unesite slovo o, ukoliko zelite da ih pomnozite unesite slovo z: ");
+	String Njanja= we.nextLine();	
+	
+	String s = Njanja.toString();
+	String o = Njanja.toString();
+	String m = Njanja.toString();
+	
+	
+	
+	if (Njanja.equals(s)) {
+		System.out.println("Zbir je " + zbir);
+	}else if (Njanja.equals(o)) {
+		System.out.println("Oduzimanje je " + oduz);
+	} else if (Njanja.equals(m)) {
+		System.out.println("Mnozenje je " + mnoz);
+	} else {
+		System.out.println("pogresan unos");
+	}
+
+	}
+
+}
